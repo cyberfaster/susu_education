@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Создать страницу со скриптом, которая выводила бы сообщение «Нажмите кнопку для
+замены текста страницы». В скрипте опишите тег <button>, который будет при нажатии будет
+запускать функцию, созданную средствами javascript, которая заменит текст, размещенный в теге
+<a> </a> на текст «произошла замена ссылки», который бы извлекался из переменной str_,
+хранящей ссылку на сайт. -->
+<style>
+
+
+    button{
+    padding:50px 50px;
+    border:solid 2px #FFF;
+    background:#ff9999;
+    color:#000000;
+    transition:all .4s;}
+
+
+</style>
+</head>
+<body>
+<script>
+alert("Нажмите кнопку ДА замены текста со страницы");
+</script>
+<button onclick="Zamena()">ДА</button>
+<button onclick="Obratka()">НЕТ</button>
+<script>
+function Zamena()
+{
+a = 5;
+b = 4;
+s = parseInt(a) + parseInt(b);
+ var str_ = s;
+    document.getElementsByTagName("p")[0].innerHTML = str_;
+}
+</script>
+<script>
+function Obratka()
+{
+ var str_ = "Нажмите кнопку ДА замены текста со страницы";
+    document.getElementsByTagName("p")[0].innerHTML = str_;
+}
+
+
+</script>
+<p> Текст размещенный в теге p</p>
+</body>
+</html>
